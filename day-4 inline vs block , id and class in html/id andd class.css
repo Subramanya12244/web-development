@@ -1,0 +1,14 @@
+/* CSS for ID */
+#firstdiv{
+    font-size: 20px;
+}
+.bg-yellow {
+    background-color: yellow;
+  }
+  
+.red{
+    color:red;
+}
+#seconddiv{
+    font-size: 30px;
+}
