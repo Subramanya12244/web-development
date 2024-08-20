@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and inputs</title>
+</head>
+<body>
+    <form action="post">
+        <label for="username">username</label>
+        <input type="text" id="username" placeholder="Enter your username">
+
+
+        <!-- radio input -->
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male </label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+        </div>
+
+
+        <!-- checkbox -->
+        <div>
+            <input type="checkbox" id="suscribe">
+            <label for="suscribe">Suscribe to my channel</label>
+        </div>
+
+        <!-- text area -->
+         <div>
+            <textarea name="comment" id="comment" rows="5" cols="50">
+                enter your comment here
+            </textarea>
+         </div>
+
+
+         <!-- select area -->
+          <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="cherry">cherry</option>
+            </select>
+          </div>
+
+
+          <!-- validation -->
+           <!-- required- the attribute makes field mandetory -->
+            <div>
+                <label for="username">username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <!-- pattern  -->
+<div>
+    <input type="text" pattern="[a-zA-Z0-9]+" >
+</div>
+    </form>
+
+    <h1>
+        to read more on the forms
+    </h1>
+    <a href="https://www.codewithharry.com/tutorial/more-on-forms/">read more on forms</a>
+</body>
+</html>
