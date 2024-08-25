@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*element selecors */
+        div{
+            background-color:red;
+        }
+
+        /*class selecors */
+        .red{
+            background-color:red;
+        }
+
+        /*Id selectors */
+        #green{
+            background-color:green;
+        }
+
+        /*Class selectors - it only applies when the element is its direct child otherwise it wont apply*/
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /*descendents selectors- in this it may or maynot be the direct child but still it applies*/
+
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selectors*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*pseudo selectors*/
+a:visited{
+    color: yellow;
+}
+/* not visited*/
+a:link{
+    color:red;
+}
+a:active{
+    background-color:yellowgreen;
+}
+a:hover{
+    background-color:black;
+}
+
+p:first-child{
+    color:aqua;
+}
+</style>
+</head>
+<body>
+    <div class="red">
+        i am a div 
+        <p> i am para inside div</p>
+    </div>
+
+    <div id="green">
+        i am another div
+    </div>
+
+<a href="https://google.com">Google</a>
+</body>
+</html>
