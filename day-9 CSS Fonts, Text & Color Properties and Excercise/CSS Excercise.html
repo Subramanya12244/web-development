@@ -6,14 +6,24 @@
     <title>CSS Excercise</title>
 </head>
 <style>
-    p+p{
+    /*Solution1*/
+   /* p+p{
         background-color: blue;
         color:white;
     }
     p{
         background-color: yellow;
         color:red;
-    }
+    }*/
+/*Solution2*/
+p{
+    color:white;
+    background-color:blue;
+}
+ div>p:first-child{
+    background-color: yellow;
+    color:red;
+ }   
 </style>
 <body>
     <!-- Write html and css to style a paragraph inside a div which contains 5 other para .the first para must have bgc blue and text color white and another bgc yellow and red text color red.The html is written below for your reference. Do not change HTML file -->
