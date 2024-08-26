@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .box{
+            /*width:2048px;*/
+            border:2px solid black;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            width:60vw;
+            height:10vh;
+            margin:auto;
+            /*it makes the element centre.it is only applicable if the element is block level*/
+        }
+        .container{
+            border:2px solid black;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            width:60vw;
+            height:20vh;
+            margin:23px auto; 
+            font-size: 16px;
+            min-width: 80vh;
+        }
+        .container p{
+            font-size: 1.5em;
+        }
+        div p{
+            font-size: 1.5rem;
+        }
+        .another{
+            box-sizing: border-box;
+            color:red;
+            border:2px solid black;
+            background-color: yellow;
+            width:100vmin;
+            height:10vmin;
+            /*which in our device is v height is 10*/
+            margin:23px auto;
+        }
+    </style>
+</head>
+<body>
+    <p>pixel is 1/196th of an inch</p>
+    <div class="box">
+        this is the box
+    </div>
+    <div class="container">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium incidunt neque! Voluptas veniam commodi quas inventore minus suscipit. Amet, fugiat non. Recusandae ut ullam saepe ex doloribus aliquam consequuntur repellat sequi sed sapiente, provident, earum aspernatur dolores, culpa nostrum cum illum. Eaque facere minus iure ratione, temporibus suscipit laudantium, consequuntur rerum facilis odit sapiente laborum.
+        </p> 
+    </div>
+    <div class="another">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita earum, rerum dicta hic molestiae laudantium. Aliquid eos ipsam delectus!
+    </div>
+</body>
+</html>
