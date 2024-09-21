@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excercise 3- Design a card</title>
     <style>
-        *{
+         @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            
+            @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            
+        * {
             padding: 0;
             margin: 0;
         }
+
+        body {
+            background-color: grey;
+            padding: 45px
+        }
+
+        .card {
+            background-color: white;
+            width: 194px;
+            padding: 0 0 64px 0;
+        }
+
+        .image {
+            padding: 5px;
+
+        }
+
+        .capsules {
+            padding: 0 28px;
+        }
+
+        .capsules span {
+            border: 2px solid grey;
+            padding: 0px 6px;
+            border-radius: 7px;
+
+        }
+
+        .image img {
+            border-radius: 7px;
+        }
+        .content{
+            padding:3px 13px;
+            font-family: "Poppins", system-ui;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .content p {
+            font-size: 13px;
+            padding:2px 4px;
+            color: grey;
+            font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        .button{
+        text-align: center;
+        }
+        .button button{
+         padding:7px 9px;
+        border-radius: 15px;
+        background-color: rgb(216, 236, 253);
+        color: rgb(14, 152, 234);
+        font-size: 10px;
+        margin-top: 7px;
+        border: none;
+        font-weight: bold;
+        }
+        .button button:hover{
+        background-color: rgb(61, 127, 184);
+        color: rgb(14, 152, 234);
+        }
     </style>
 </head>
+
 <body>
-    <div class="parent">
-        
+    <div class="card">
+        <div class="image">
+            <img src="./card.jpg" width="184px" height="120px" alt="not visible">
+        </div>
+
+        <div class="capsules">
+            <span>Lake</span>
+            <span>Nature</span>
+        </div>
+        <div class="content">
+            <h2>Subramanya</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, blanditiis! Perspiciatis illum quae nulla
+                odit temporibus quidem, magnam eveniet! Laboriosam rerum asperiores cum?</p>
+        </div>
+        <div class="button">
+        <button>Read More</button>
+        </div>
     </div>
 </body>
+
 </html>
