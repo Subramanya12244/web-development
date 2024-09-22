@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color:blue;
+            --subcolor:orange;
+            --defpad:25px;
+        }
+        nav{
+            background-color: var(--color);
+        }
+        ul{
+           
+            display: flex;
+        
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        .container{
+           /* color: azure;
+            background-color: aquamarine; */
+            background-color: var(--subcolor );
+        }
+        ul li:first-child{
+            --color:red;
+            background-color: var(--color,blue);
+            padding:var(--defpad)
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere quasi unde voluptatum corrupti, mollitia nulla suscipit ex et sapiente dignissimos commodi, a repudiandae ratione neque, vitae fugit adipisci quos.
+    </div>
+</body>
+</html>
