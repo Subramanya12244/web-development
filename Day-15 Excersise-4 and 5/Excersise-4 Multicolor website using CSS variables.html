@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise-4 Multicolor website using CSS variables</title>
+    <style>
+        :root{
+            --primc:rgb(196, 154, 196);
+            --secoc:rgb(104, 104, 187);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      ul li{
+        list-style: none;
+        display :inline;
+        padding: 23px;
+        font-weight: 400;
+
+      }
+      body{
+        background-color: var(--secoc);
+      }
+      nav{
+        background-color:var(--primc);
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+</html>

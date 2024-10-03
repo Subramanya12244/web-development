@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        .box:nth-child(2):first-line{
+            color:yellow
+        }
+        .boxes *{
+            font-size: large;
+            border:2px solid black;
+        }
+        [data-color="primary"]
+        {
+            margin-top:50px;
+        }
+        .boxes::after{
+            content:"hello world";
+            background-color: blue;
+            color: azure;
+        }
+        .boxes::before{
+            content:"World Hello";
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">
+            Hey i am Subramanya
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At provident illo nobis. Molestiae doloremque atque magni eveniet tenetur id assumenda odit aliquid ea veritatis iure consequuntur beatae dolore esse, ratione architecto minus omnis officiis facilis ipsa sint ut! A, optio voluptatibus rem repellendus commodi fugit reiciendis perferendis expedita amet, nam consequatur maxime sapiente quibusdam molestias aliquid, architecto eum inventore atque quo animi ut eius? Aspernatur saepe, iusto neque vel perferendis voluptatem a quam. Architecto veniam atque est delectus quae aliquid exercitationem sequi. Laborum quam dolorem sed! Reiciendis odio tenetur sit deserunt? Consequatur exercitationem facere quos minus harum fugiat, non fuga!
+        </div>
+        <div data-color="primary" class="box">
+            Hey i am Subramanya
+        </div>
+    </div>
+
+</body>
+</html>
