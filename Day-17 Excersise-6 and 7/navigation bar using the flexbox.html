@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar using the flex box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        nav ul{
+            border:2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            padding: 5px 0;
+            background-color: rgb(226, 86, 86);
+            gap:1%;
+        }
+        
+        li{
+            display: flex;
+           justify-content:space-around;
+            padding:0px 70px;
+            display: inline;
+            border: 2px solid black;
+            background-color: pink;
+
+        }
+        .logo img{
+            width:126px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="head">
+        <nav>
+            
+            <ul>
+                <div class="logo">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+                </div>
+                <li>Home</li>
+                <li>About</li>
+                <li>content</li>
+                <li>Reference</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
