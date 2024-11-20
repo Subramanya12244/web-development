@@ -18,6 +18,7 @@ let a=prompt("Enter first number");
 let c=prompt("Enter Operation");
 let b=prompt("Enter second number");
 
+console.log(random);
 
 let obj={
     "+":"-",
@@ -29,6 +30,7 @@ let obj={
 if(random>0.1)
 {
 //     perform normal operation
+    console.log(`The result is ${eval(`${a} ${c} ${b}`)}`)
     alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
 }
 else{
